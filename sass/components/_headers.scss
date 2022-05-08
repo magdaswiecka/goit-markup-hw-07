@@ -1,0 +1,130 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__logo--style {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+  /* identical to box height */
+
+  letter-spacing: 0.03em;
+
+  color: #2196f3;
+  text-decoration: none;
+  margin-top: 24px;
+  margin-bottom: 25px;
+  
+}
+.header__logo {
+  display: flex;
+  justify-content: left;
+
+}
+.menu {
+  display: flex;
+  margin-top: 32px;
+  justify-content: flex-start;
+  margin-left: 93px;
+}
+
+.menu:hover .menu {
+  color: var(--maincolor-blue);
+}
+
+
+.contact {
+  display: flex;
+  margin-top: 26px;
+  margin-bottom: 32px;
+}
+
+.main-menu {
+  display: block;
+  color: black;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 0, 875;
+  letter-spacing: 0.02em;
+  margin-left: 46px;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    color: var(--maincolor-blue);
+  }
+}
+
+.main-menu--selected::after {
+  display: block;
+  content: "";
+  width: 53px;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--maincolor-blue);
+  margin-top: 30px;
+}
+
+
+.header__logo-menu {
+  display: flex;
+  flex-direction: row;
+}
+
+/* CONTACT BEM BLOCK */
+.contact__telephone,
+.contact__mail {
+  display: inline-flex;
+  align-items: center;
+  height: 24px;
+  color: var(--colortext-opisy);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 0, 875;
+  letter-spacing: 0.02em;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  
+}
+
+.contact__telephone:hover .smartphone,
+.contact__mail:hover .envelope {
+  fill: var(--maincolor-blue);
+  cursor: pointer;
+}
+
+
+.smartphone {
+  margin-right: 10px;
+  fill: #757575;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+.envelope {
+  margin-right: 10px;
+  margin-left: 30px;
+  fill: #757575;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+    fill: var(--maincolor-blue);
+    cursor: pointer;
+  }
+}
+
